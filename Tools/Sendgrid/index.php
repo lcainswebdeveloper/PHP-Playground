@@ -1,13 +1,18 @@
 <?php
 require __DIR__.'/../../autoload.php';
-
-if(isset($_POST)):
+ 
+if(isset($_POST['email'])):
     prepr($_POST);
-    $sendgrid = new Tools\Sendgrid\Sendgrid;
+    $sendgrid = new \Tools\Sendgrid\SendgridWrapper(env('SENDGRID_API_KEY'));
     $sendgrid->to = 'lewis@cube-design.co.uk';
-    $sendgrid->from = 'testing@cube-design.co.uk';
+    $sendgrid->from = 'lewis@lcainswebdeveloper.co.uk';
+    //$sendgrid->from = [$_POST['email'], 'Lewis Cains'];
     $sendgrid->subject = 'TEST EMAIL';
-    $sendgrid->content = 'THIS IS MY EMAIL';
+    $sendgrid->content = '<h1>THIS IS MY EMAIL</h1>';
+    $sendgrid->returnJson = true;
+    $response = $sendgrid->send();
+    //prepr($sendgrid);
+    prepr($response);
 endif;
 ?>
 
