@@ -3,7 +3,8 @@
     "require": {
         "guzzlehttp/guzzle": "^6.3",
         "vlucas/phpdotenv": "^2.4",
-        "sendgrid/sendgrid": "^7.0"
+        "sendgrid/sendgrid": "^7.0",
+        "kzykhys/php-csv-parser": "^1.4"
     },
     "autoload":{
         "psr-4": {

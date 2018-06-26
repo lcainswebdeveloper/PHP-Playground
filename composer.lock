@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "68d796ac4dbd213c9aeeecb57a433fec",
-    "content-hash": "1f2e2ea52d06721b6a5b614669b7a5cd",
+    "hash": "4fa834915eb8455f73ecd9eb378a12d2",
+    "content-hash": "f0e5f6660120deb289198563af7612bb",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -187,6 +187,42 @@
                 "url"
             ],
             "time": "2017-03-20 17:10:46"
+        },
+        {
+            "name": "kzykhys/php-csv-parser",
+            "version": "1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kzykhys/PHPCsvParser.git",
+                "reference": "4f5b6db78c687d22b37a5d24542ae433b2fa48cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kzykhys/PHPCsvParser/zipball/4f5b6db78c687d22b37a5d24542ae433b2fa48cf",
+                "reference": "4f5b6db78c687d22b37a5d24542ae433b2fa48cf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kazuyuki Hayashi",
+                    "email": "hayashi@valnur.net"
+                }
+            ],
+            "description": "Convert CSV to array (Excel style is fully suppoted!)",
+            "time": "2014-01-15 05:17:19"
         },
         {
             "name": "psr/http-message",
